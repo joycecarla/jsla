@@ -20,7 +20,11 @@ namespace juan_sumulong_learning_app
         {
             if (Database.IsOpen)
                 Database.Close();
+
+            Database.Open();
+
         }
+
 
     }
 }

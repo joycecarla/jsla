@@ -5,7 +5,7 @@ using System.Text;
 
 namespace juan_sumulong_learning_app
 {
-    public struct Student
+    struct Academic
     {
         public string ID;
         public string Lastname;
@@ -14,7 +14,6 @@ namespace juan_sumulong_learning_app
         public int Birthday;
         public string Birthmonth;
         public int Birthyear;
-        public string AvatarPath;
+        public string FilePath;
     }
-
 }

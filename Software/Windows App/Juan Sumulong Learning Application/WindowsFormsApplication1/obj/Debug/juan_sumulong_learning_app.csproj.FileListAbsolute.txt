@@ -12,4 +12,4 @@ C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Applicat
 C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.csproj.GenerateResource.Cache
 C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\Juan Sumulong Learning App.exe
 C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\Juan Sumulong Learning App.pdb
-C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.csprojResolveAssemblyReference.cache
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.frm_login.resources

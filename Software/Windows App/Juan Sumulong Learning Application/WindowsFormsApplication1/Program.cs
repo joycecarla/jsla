@@ -15,7 +15,7 @@ namespace juan_sumulong_learning_app
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home());
+            Application.Run(new frm_login());
         }
     }
 }
