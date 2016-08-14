@@ -14,7 +14,13 @@ namespace juan_sumulong_learning_app
         public Home()
         {
             InitializeComponent();
-
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            if (Database.IsOpen)
+                Database.Close();
+        }
+
     }
 }
