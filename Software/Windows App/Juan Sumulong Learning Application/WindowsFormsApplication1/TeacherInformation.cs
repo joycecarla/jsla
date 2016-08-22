@@ -9,22 +9,16 @@ using System.Windows.Forms;
 
 namespace juan_sumulong_learning_app
 {
-    public partial class Home : Form
+    public partial class TeacherInformation : Form
     {
-        public Home()
+        public TeacherInformation()
         {
             InitializeComponent();
         }
 
-        private void Home_Load(object sender, EventArgs e)
+        private void TeacherInformation_Load(object sender, EventArgs e)
         {
-            //if (Database.IsOpen)
-            //    Database.Close();
-
-            //Database.Open();
 
         }
-
-
     }
 }

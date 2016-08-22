@@ -64,11 +64,23 @@
   <ItemGroup>
     <Compile Include="Data Struct\struct_account.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lessons.Designer.cs">
+      <DependentUpon>Lessons.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -80,6 +92,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Data Struct\struct_student.cs" />
     <Compile Include="Data Struct\struct_academic.cs" />
+    <Compile Include="StudentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInformation.Designer.cs">
+      <DependentUpon>StudentInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherInformation.Designer.cs">
+      <DependentUpon>TeacherInformation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +123,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StudentInformation.resx">
+      <DependentUpon>StudentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherInformation.resx">
+      <DependentUpon>TeacherInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
