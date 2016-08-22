@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Announcements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Announcements.Designer.cs">
+      <DependentUpon>Announcements.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data Struct\struct_account.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="AddSubject.cs">
@@ -76,11 +82,11 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lessons.cs">
+    <Compile Include="AddLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessons.Designer.cs">
-      <DependentUpon>Lessons.cs</DependentUpon>
+    <Compile Include="AddLesson.Designer.cs">
+      <DependentUpon>AddLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -104,11 +110,23 @@
     <Compile Include="TeacherInformation.Designer.cs">
       <DependentUpon>TeacherInformation.cs</DependentUpon>
     </Compile>
+    <Compile Include="VideoPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoPlayer.Designer.cs">
+      <DependentUpon>VideoPlayer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddSubject.resx">
       <DependentUpon>AddSubject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Announcements.resx">
+      <DependentUpon>Announcements.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLesson.resx">
+      <DependentUpon>AddLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -128,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherInformation.resx">
       <DependentUpon>TeacherInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoPlayer.resx">
+      <DependentUpon>VideoPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -153,6 +174,25 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

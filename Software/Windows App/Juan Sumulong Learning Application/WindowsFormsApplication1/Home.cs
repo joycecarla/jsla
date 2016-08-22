@@ -25,6 +25,15 @@ namespace juan_sumulong_learning_app
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //VideoPlayer vp = new VideoPlayer();
+            //vp.TopLevel = false;
+            //panel1.Controls.Clear();
+            //panel1.Controls.Add(vp);
+            //vp.Visible = true;
+        }
+
 
     }
 }
