@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace juan_sumulong_learning_app
+{
+    public partial class Announcements : Form
+    {
+        int i = 0;
+        public Announcements()
+        {
+            InitializeComponent();
+        }
+
+        private void Announcements_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (i < imageList1.Images.Count)
+            {
+                pictureBox1.Image = imageList1.Images[i];
+                i++;
+            }
+            }
+    }
+}
