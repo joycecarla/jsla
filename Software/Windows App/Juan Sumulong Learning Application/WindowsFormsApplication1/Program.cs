@@ -15,7 +15,7 @@ namespace juan_sumulong_learning_app
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Announcements());
+            Application.Run(new StudentInformation(new Database("jsla", "localhost")));
         }
     }
 }

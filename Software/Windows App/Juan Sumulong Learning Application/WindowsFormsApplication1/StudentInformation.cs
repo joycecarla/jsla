@@ -14,6 +14,8 @@ namespace juan_sumulong_learning_app
     {
         private List<ListViewItem> _items = new List<ListViewItem>();
         private Database _database;
+        private string _avatarpath;
+        private string _avatarfilename;
 
         public StudentInformation(Database database)
         {
@@ -28,6 +30,7 @@ namespace juan_sumulong_learning_app
             string[,] result = _database.ExecuteQuery("select distinct year from tbl_sections;");
             for (int i = 0; i < result.GetLength(0); i++)
                 cbxYear.Items.Add(result[i, 0]);
+
 
 
         }
@@ -84,6 +87,59 @@ namespace juan_sumulong_learning_app
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             filterItems();
+        }
+
+        private void cbxYear_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (cbxYear.SelectedItem != null)
+            {
+                cbxSection.Items.Clear();
+                string[,] result = _database.ExecuteQuery("select distinct name from tbl_sections where year = '" + cbxYear.Text + "'");
+                for (int i = 0; i < result.GetLength(0); i++)
+                    cbxSection.Items.Add(result[i, 0]); 
+            }
+
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string[,] sectionid = _database.ScanRecords("tbl_sections", new string[] { "Section_ID" },  "Name = '" + cbxSection.Text + '\'');
+
+            if (_avatarpath != String.Empty)
+                if (_database.InsertRecord("tbl_student",
+                    lblStudentNumber.Text,
+                    txtFirstName.Text,
+                    txtLastName.Text,
+                    txtMiddleName.Text,
+                    sectionid[0, 0],
+                    "avatars/" + _avatarfilename))
+                    using (System.Net.WebClient client = new System.Net.WebClient())
+                        client.UploadFile("localhost/ITS/avatar/" + lblStudentNumber.Text, _avatarpath);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog avatar = new OpenFileDialog()
+            {
+                Multiselect = false,
+                Filter = "*.jpg, *.jpeg, *.png, *.img | Image Files | *.* | All Files"
+            };
+            if (avatar.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                _avatarpath = avatar.FileName;
+                _avatarfilename = avatar.SafeFileName;
+            }
+        }
+
+        private void listView1_ItemActivate(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentInformation_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txtSearch.Focus();
         }
     }
 }
