@@ -15,7 +15,7 @@ namespace new_JSLA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StudentInfomation());
+            Application.Run(new Home());
         }
     }
 }

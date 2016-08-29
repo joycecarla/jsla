@@ -15,5 +15,16 @@ namespace new_JSLA
         {
             InitializeComponent();
         }
+
+        private void StudentInfomation_Load(object sender, EventArgs e)
+        {
+
+        }
+
+      
+        private void txtFirstName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            btnCancel.Text = "Clear";
+        }
     }
 }

@@ -141,5 +141,10 @@ namespace juan_sumulong_learning_app
         {
             txtSearch.Focus();
         }
+
+        private void txtLastName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            btnCancel.Text = "Clear";
+        }
     }
 }

@@ -20,5 +20,18 @@ namespace new_JSLA
         {
             Application.Exit();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            StudentInfomation studinfo = new StudentInfomation();
+            studinfo.TopLevel = false;
+            studinfo.FormBorderStyle = FormBorderStyle.None;
+            pnl.Controls.Clear();
+            pnl.Controls.Add(studinfo);
+            studinfo.Visible = true;
+
+        }
+
+      
     }
 }
