@@ -12,6 +12,8 @@ namespace juan_sumulong_learning_app
 {
     public partial class frm_login : Form
     {
+        private Database database;
+
         private MySqlCommand command;
         private MySqlDataReader reader;
 
@@ -20,6 +22,7 @@ namespace juan_sumulong_learning_app
         public frm_login()
         {
             InitializeComponent();
+            database = new Database("jsla", "localhost");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,41 +66,52 @@ namespace juan_sumulong_learning_app
 
         private void btn_logIn_Click(object sender, EventArgs e)
         {
-            if (Database.IsOpen) Database.Close();
+            //try
+            //{
+            //    if (Database.IsOpen) Database.Close();
 
-            Database.Open();
+            //    Database.Open();
 
-            try
-            {
                
-                string query = String.Format("SELECT userID, accType FROM tbl_accounts WHERE userID='{0}' AND password='{1}';", txtBox_userID.Text, txtBox_password.Text);
-                command = new MySqlCommand(query, Database.Connector);
-                reader = command.ExecuteReader();
+            //    string query = String.Format("SELECT userID, accType FROM tbl_accounts WHERE userID='{0}' AND password='{1}';", txtBox_userID.Text, txtBox_password.Text);
+            //    command = new MySqlCommand(query, Database.Connector);
+            //    reader = command.ExecuteReader();
 
-                if (reader.HasRows)
-                    while (reader.Read())
-                    {
-                        _userAccount.ID = reader[0].ToString();
-                        _userAccount.Type = reader[1].ToString();
-                        MessageBox.Show(_userAccount.ID + " and " + _userAccount.Type);
-                    }
-                else
-                    MessageBox.Show("User doesn't exist.");
-
-                    
-                MessageBox.Show("Welcome!");
-
-
+            //    if (reader.HasRows)
+            //        while (reader.Read())
+            //        {
+            //            _userAccount.ID = reader[0].ToString();
+            //            _userAccount.Type = reader[1].ToString();
+            //            MessageBox.Show(_userAccount.ID + " and " + _userAccount.Type);
+            //            MessageBox.Show("Welcome!");
+            //        }
+            //    else
+            //        MessageBox.Show("Username and password do not match!");
                 
-            }
-            catch(Exception ex)
+            //}
+            //catch(Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+
+            string[,] result = database.ScanRecords("tbl_accounts", new string[] { "accType" }, "userID='" + txtBox_userID.Text + "' and password='" + txtBox_password.Text + '\'');
+
+            switch (result[0, 0])
             {
+                case "Admin":
+                    break;
+                case "Student":
 
- 
+                    break;
+                case "Teacher":
+                    break;
             }
 
-
+            StudentInformation si = new StudentInformation(database);
+            si.Show();
         }
+
+        
 
     }
 }

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78199E5A-7A57-43E3-90FB-65233A3A8EDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>new_JSLA</RootNamespace>
+    <AssemblyName>new JSLA</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSection.Designer.cs">
+      <DependentUpon>AddSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course.Designer.cs">
+      <DependentUpon>Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileStorage.Designer.cs">
+      <DependentUpon>FileStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="picturebutton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="picturebutton.Designer.cs">
+      <DependentUpon>picturebutton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentInfomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInfomation.Designer.cs">
+      <DependentUpon>StudentInfomation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject.Designer.cs">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subjects.Designer.cs">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherInfomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherInfomation.Designer.cs">
+      <DependentUpon>TeacherInfomation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddSection.resx">
+      <DependentUpon>AddSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course.resx">
+      <DependentUpon>Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileStorage.resx">
+      <DependentUpon>FileStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="picturebutton.resx">
+      <DependentUpon>picturebutton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StudentInfomation.resx">
+      <DependentUpon>StudentInfomation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject.resx">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subjects.resx">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherInfomation.resx">
+      <DependentUpon>TeacherInfomation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

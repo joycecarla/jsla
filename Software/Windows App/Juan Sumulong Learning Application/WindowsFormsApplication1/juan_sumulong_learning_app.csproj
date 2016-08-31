@@ -62,13 +62,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Announcements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Announcements.Designer.cs">
+      <DependentUpon>Announcements.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data Struct\struct_account.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLesson.Designer.cs">
+      <DependentUpon>AddLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -80,8 +98,29 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Data Struct\struct_student.cs" />
     <Compile Include="Data Struct\struct_academic.cs" />
+    <Compile Include="StudentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInformation.Designer.cs">
+      <DependentUpon>StudentInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherInformation.Designer.cs">
+      <DependentUpon>TeacherInformation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Announcements.resx">
+      <DependentUpon>Announcements.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLesson.resx">
+      <DependentUpon>AddLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -96,6 +135,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StudentInformation.resx">
+      <DependentUpon>StudentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherInformation.resx">
+      <DependentUpon>TeacherInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,6 +165,25 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

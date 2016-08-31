@@ -33,11 +33,11 @@
             this.tblLayout_login = new System.Windows.Forms.TableLayoutPanel();
             this.tblLayout_loginContent = new System.Windows.Forms.TableLayoutPanel();
             this.txtBox_userID = new System.Windows.Forms.TextBox();
-            this.txtBox_password = new System.Windows.Forms.TextBox();
             this.btn_logIn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtBox_password = new System.Windows.Forms.TextBox();
             this.picBox_schoolLogo = new System.Windows.Forms.PictureBox();
             this.tblLayout_exit = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.tblLayout_login.SuspendLayout();
             this.tblLayout_loginContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_schoolLogo)).BeginInit();
@@ -81,8 +81,8 @@
             this.tblLayout_loginContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
             this.tblLayout_loginContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tblLayout_loginContent.Controls.Add(this.txtBox_userID, 1, 1);
-            this.tblLayout_loginContent.Controls.Add(this.txtBox_password, 1, 2);
             this.tblLayout_loginContent.Controls.Add(this.btn_logIn, 1, 3);
+            this.tblLayout_loginContent.Controls.Add(this.txtBox_password, 1, 2);
             this.tblLayout_loginContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblLayout_loginContent.Location = new System.Drawing.Point(3, 202);
             this.tblLayout_loginContent.Name = "tblLayout_loginContent";
@@ -108,6 +108,17 @@
             this.txtBox_userID.Enter += new System.EventHandler(this.txtBox_userID_Enter);
             this.txtBox_userID.Leave += new System.EventHandler(this.txtBox_userID_Leave);
             // 
+            // btn_logIn
+            // 
+            this.btn_logIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logIn.Location = new System.Drawing.Point(70, 167);
+            this.btn_logIn.Name = "btn_logIn";
+            this.btn_logIn.Size = new System.Drawing.Size(251, 39);
+            this.btn_logIn.TabIndex = 8;
+            this.btn_logIn.Text = "Log In";
+            this.btn_logIn.UseVisualStyleBackColor = true;
+            this.btn_logIn.Click += new System.EventHandler(this.btn_logIn_Click);
+            // 
             // txtBox_password
             // 
             this.txtBox_password.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -121,30 +132,6 @@
             this.txtBox_password.Text = "Password";
             this.txtBox_password.Enter += new System.EventHandler(this.txtBox_password_Enter);
             this.txtBox_password.Leave += new System.EventHandler(this.txtBox_password_Leave);
-            // 
-            // btn_logIn
-            // 
-            this.btn_logIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logIn.Location = new System.Drawing.Point(70, 167);
-            this.btn_logIn.Name = "btn_logIn";
-            this.btn_logIn.Size = new System.Drawing.Size(251, 39);
-            this.btn_logIn.TabIndex = 8;
-            this.btn_logIn.Text = "Log In";
-            this.btn_logIn.UseVisualStyleBackColor = true;
-            this.btn_logIn.Click += new System.EventHandler(this.btn_logIn_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(357, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // picBox_schoolLogo
             // 
@@ -168,6 +155,19 @@
             this.tblLayout_exit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblLayout_exit.Size = new System.Drawing.Size(383, 31);
             this.tblLayout_exit.TabIndex = 10;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(357, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frm_login
             // 

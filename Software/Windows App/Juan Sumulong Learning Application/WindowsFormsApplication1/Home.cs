@@ -18,11 +18,20 @@ namespace juan_sumulong_learning_app
 
         private void Home_Load(object sender, EventArgs e)
         {
-            if (Database.IsOpen)
-                Database.Close();
+            //if (Database.IsOpen)
+            //    Database.Close();
 
-            Database.Open();
+            //Database.Open();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //VideoPlayer vp = new VideoPlayer();
+            //vp.TopLevel = false;
+            //panel1.Controls.Clear();
+            //panel1.Controls.Add(vp);
+            //vp.Visible = true;
         }
 
 

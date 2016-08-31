@@ -13,3 +13,23 @@ C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Applicat
 C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\Juan Sumulong Learning App.exe
 C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\Juan Sumulong Learning App.pdb
 C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.frm_login.resources
+C:\Users\Joyce\Documents\1 This Sem\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\Juan Sumulong Learning App.exe
+C:\Users\Joyce\Documents\1 This Sem\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\Juan Sumulong Learning App.pdb
+C:\Users\Joyce\Documents\1 This Sem\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.csprojResolveAssemblyReference.cache
+C:\Users\Joyce\Documents\1 This Sem\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.Home.resources
+C:\Users\Joyce\Documents\1 This Sem\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.frm_login.resources
+C:\Users\Joyce\Documents\1 This Sem\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.Properties.Resources.resources
+C:\Users\Joyce\Documents\1 This Sem\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.csproj.GenerateResource.Cache
+C:\Users\Joyce\Documents\1 This Sem\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\bin\Debug\Juan Sumulong Learning App.exe
+C:\Users\Joyce\Documents\1 This Sem\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\bin\Debug\Juan Sumulong Learning App.pdb
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.StudentInformation.resources
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\Interop.WMPLib.dll
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.csproj.ResolveComReference.cache
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.AddSubject.resources
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.AddLesson.resources
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.TeacherInformation.resources
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\bin\Debug\Interop.WMPLib.dll
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.Announcements.resources
+C:\Users\Joyce\Desktop\JSLA\Software\Windows App\Juan Sumulong Learning Application\WindowsFormsApplication1\obj\Debug\juan_sumulong_learning_app.csprojResolveAssemblyReference.cache
