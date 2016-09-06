@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.SectionID = new System.Windows.Forms.Label();
+            this.txtSection = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.cbxYear = new System.Windows.Forms.ComboBox();
             this.cbxCourse = new System.Windows.Forms.ComboBox();
-            this.cbxSection = new System.Windows.Forms.ComboBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -57,23 +57,23 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Sections";
             // 
-            // label6
+            // SectionID
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(107, 72);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 17);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "label6";
+            this.SectionID.AutoSize = true;
+            this.SectionID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SectionID.Location = new System.Drawing.Point(107, 72);
+            this.SectionID.Name = "SectionID";
+            this.SectionID.Size = new System.Drawing.Size(43, 17);
+            this.SectionID.TabIndex = 16;
+            this.SectionID.Text = "label6";
             // 
-            // txtFirstName
+            // txtSection
             // 
-            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(110, 95);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(142, 25);
-            this.txtFirstName.TabIndex = 14;
+            this.txtSection.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSection.Location = new System.Drawing.Point(110, 95);
+            this.txtSection.Name = "txtSection";
+            this.txtSection.Size = new System.Drawing.Size(142, 25);
+            this.txtSection.TabIndex = 14;
             // 
             // label4
             // 
@@ -115,25 +115,25 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "Year:";
             // 
+            // cbxYear
+            // 
+            this.cbxYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxYear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxYear.FormattingEnabled = true;
+            this.cbxYear.Location = new System.Drawing.Point(110, 157);
+            this.cbxYear.Name = "cbxYear";
+            this.cbxYear.Size = new System.Drawing.Size(142, 25);
+            this.cbxYear.TabIndex = 18;
+            // 
             // cbxCourse
             // 
             this.cbxCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCourse.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxCourse.FormattingEnabled = true;
-            this.cbxCourse.Location = new System.Drawing.Point(110, 157);
+            this.cbxCourse.Location = new System.Drawing.Point(110, 126);
             this.cbxCourse.Name = "cbxCourse";
             this.cbxCourse.Size = new System.Drawing.Size(142, 25);
-            this.cbxCourse.TabIndex = 18;
-            // 
-            // cbxSection
-            // 
-            this.cbxSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxSection.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSection.FormattingEnabled = true;
-            this.cbxSection.Location = new System.Drawing.Point(110, 126);
-            this.cbxSection.Name = "cbxSection";
-            this.cbxSection.Size = new System.Drawing.Size(142, 25);
-            this.cbxSection.TabIndex = 19;
+            this.cbxCourse.TabIndex = 19;
             // 
             // listView1
             // 
@@ -208,11 +208,11 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.listView1);
+            this.Controls.Add(this.cbxYear);
             this.Controls.Add(this.cbxCourse);
-            this.Controls.Add(this.cbxSection);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.SectionID);
+            this.Controls.Add(this.txtSection);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -228,14 +228,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.Label SectionID;
+        private System.Windows.Forms.TextBox txtSection;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbxYear;
         private System.Windows.Forms.ComboBox cbxCourse;
-        private System.Windows.Forms.ComboBox cbxSection;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 100113
 File Encoding         : 65001
 
-Date: 2016-08-28 23:08:28
+Date: 2016-09-01 01:55:34
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,6 +32,27 @@ CREATE TABLE `meta_file` (
 
 -- ----------------------------
 -- Records of meta_file
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for tblquizinfo
+-- ----------------------------
+DROP TABLE IF EXISTS `tblquizinfo`;
+CREATE TABLE `tblquizinfo` (
+  `QuizID` varchar(9) NOT NULL,
+  `QuizTitle` varchar(255) DEFAULT NULL,
+  `SubjectID` varchar(9) DEFAULT NULL,
+  `TeacherID` varchar(9) DEFAULT NULL,
+  `quizType` varchar(255) DEFAULT NULL,
+  `Year` varchar(255) DEFAULT NULL,
+  `SectionID` varchar(9) DEFAULT NULL,
+  `No.ofItem` int(11) DEFAULT NULL,
+  `Points` int(11) DEFAULT NULL,
+  PRIMARY KEY (`QuizID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of tblquizinfo
 -- ----------------------------
 
 -- ----------------------------

@@ -37,7 +37,7 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtFirst = new System.Windows.Forms.TextBox();
             this.txtMiddle = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.StudentID = new System.Windows.Forms.Label();
             this.lstStudent = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -49,8 +49,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cbxCourse = new System.Windows.Forms.ComboBox();
-            this.cbxYear = new System.Windows.Forms.ComboBox();
             this.cbxSection = new System.Windows.Forms.ComboBox();
+            this.cbxYear = new System.Windows.Forms.ComboBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -60,6 +60,9 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnSearch.Location = new System.Drawing.Point(743, 30);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
@@ -142,15 +145,15 @@
             this.txtMiddle.Size = new System.Drawing.Size(142, 25);
             this.txtMiddle.TabIndex = 9;
             // 
-            // label6
+            // StudentID
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(106, 76);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "label6";
+            this.StudentID.AutoSize = true;
+            this.StudentID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentID.Location = new System.Drawing.Point(106, 76);
+            this.StudentID.Name = "StudentID";
+            this.StudentID.Size = new System.Drawing.Size(43, 17);
+            this.StudentID.TabIndex = 10;
+            this.StudentID.Text = "label6";
             // 
             // lstStudent
             // 
@@ -243,25 +246,25 @@
             this.cbxCourse.Size = new System.Drawing.Size(142, 25);
             this.cbxCourse.TabIndex = 15;
             // 
-            // cbxYear
-            // 
-            this.cbxYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxYear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxYear.FormattingEnabled = true;
-            this.cbxYear.Location = new System.Drawing.Point(97, 72);
-            this.cbxYear.Name = "cbxYear";
-            this.cbxYear.Size = new System.Drawing.Size(142, 25);
-            this.cbxYear.TabIndex = 16;
-            // 
             // cbxSection
             // 
             this.cbxSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSection.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSection.FormattingEnabled = true;
-            this.cbxSection.Location = new System.Drawing.Point(97, 45);
+            this.cbxSection.Location = new System.Drawing.Point(97, 72);
             this.cbxSection.Name = "cbxSection";
             this.cbxSection.Size = new System.Drawing.Size(142, 25);
-            this.cbxSection.TabIndex = 17;
+            this.cbxSection.TabIndex = 16;
+            // 
+            // cbxYear
+            // 
+            this.cbxYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxYear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxYear.FormattingEnabled = true;
+            this.cbxYear.Location = new System.Drawing.Point(97, 45);
+            this.cbxYear.Name = "cbxYear";
+            this.cbxYear.Size = new System.Drawing.Size(142, 25);
+            this.cbxYear.TabIndex = 17;
             // 
             // txtSearch
             // 
@@ -273,10 +276,11 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.cbxSection);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cbxYear);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.cbxSection);
             this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 193);
             this.groupBox1.Name = "groupBox1";
@@ -287,6 +291,9 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnAdd.Location = new System.Drawing.Point(109, 320);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
@@ -296,6 +303,9 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnCancel.Location = new System.Drawing.Point(190, 320);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
@@ -314,7 +324,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.cbxCourse);
             this.Controls.Add(this.lstStudent);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.StudentID);
             this.Controls.Add(this.txtMiddle);
             this.Controls.Add(this.txtFirst);
             this.Controls.Add(this.txtFirstName);
@@ -347,14 +357,14 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtFirst;
         private System.Windows.Forms.TextBox txtMiddle;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label StudentID;
         private System.Windows.Forms.ListView lstStudent;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbxCourse;
-        private System.Windows.Forms.ComboBox cbxYear;
         private System.Windows.Forms.ComboBox cbxSection;
+        private System.Windows.Forms.ComboBox cbxYear;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
