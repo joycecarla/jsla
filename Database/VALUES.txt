@@ -1,0 +1,30 @@
+INSERT INTO `tbl_sections` (`Section_ID`, `Section`, `Course_ID`, `Year`) VALUES
+(1, 'STEM101', 'STEM', 11),
+(1A, 'STEM102', 'STEM', 11),
+(1B, 'STEM103', 'STEM', 11),
+(2, 'GAS101', 'GAS', 11),
+(3, 'ABM101', 'ABM', 11),
+(3A, 'ABM102', 'ABM', 11),
+(4, 'HE101', 'HE', 11),
+(5, 'ICT101', 'ICT', 11);
+
+
+
+INSERT INTO `tbl_student` (`Stud_ID`, `LastName`, `FirstName`, `MiddleName`, `Section_ID`, `Avatar`) VALUES
+('1, 'MARANAN', 'CHRISTIAN MICHAEL', 'SANTIAGO', 5, NULL),
+('2', 'MARGALLO', 'MARK FREDERICK', CABANGON, 5, NULL),
+('3', 'MIRABETE', 'RON RYAN', 'CRUZ', 5, NULL),
+('4', 'ORIGENES', 'ASRIEL', 'REYES', 5, NULL),
+('5', 'PINGOL', 'MARK MAURY', 'GEREMILLO', 5, NULL),
+('6', 'DEL ROSARIO', 'ELIJIAN ANGELO', 'FLORES', 4, NULL),
+('7', 'DELA CRUZ', 'ARON PAUL', 'BAYOLA', 4, NULL),
+('8', 'DIZON', 'MARIA ANDREA', 'DOLORES', 4, NULL),
+('9', 'DOLORES', 'TJ FRANCIS', 'DE LEON', 4, NULL),
+('10', 'DONES', 'ALBERT RENZ', 'ANCHINGES', 4, NULL);
+
+
+INSERT INTO `tbl_academicstaff` VALUES ('T1', 'DEL ROSARIO', 'MICHELLE', 'F', null, ''),
+('T2', 'LIBRAMONTE', 'ROEL', '', null, ''),
+('T3', 'ALMOCERA', 'FLORENCE NICOLE', '', null, ''),
+('T4', 'PAJARILLO', 'JOSE ALFREDO', '', null, ''),
+('T5', 'RONDILLA', 'CARIZZA', '', null, '');
